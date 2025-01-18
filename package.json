@@ -1,0 +1,21 @@
+{
+	"name": "chanrec-archives",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"license": "MIT",
+	"type": "module",
+	"author": "CST1229",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "node src/index.js",
+		"vacuum": "node src/vacuum.js"
+	},
+	"dependencies": {
+		"better-sqlite3": "^8.4.0",
+		"express": "^4.17.3"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.8"
+	}
+}
