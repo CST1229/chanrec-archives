@@ -285,12 +285,13 @@ fs.writeFile(root + "help.html", (
 	const js = `
 	const resultEl = document.getElementById("results");
 	resultEl.textContent = "Downloading search index...";
+	let archives;
 	try {
-		const archives = await (await fetch("./archives-search.json", {mode: "cors"})).json();
+		archives = await (await fetch("./archives-search.json", {mode: "cors"})).json();
 	} catch(e) {
 		resultEl.textContent = "Could not download search index. " + e.toString();
 	 	console.error(e);
-		return;
+		throw e;
 	}
 	resultEl.textContent = "Searching...";
 
