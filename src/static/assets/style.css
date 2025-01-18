@@ -57,6 +57,7 @@ button {
 
 	position: absolute;
 	right: 1em;
+	bottom: 0.2em;
 	padding: 0 12px;
 }
 .tl:hover .ln,
