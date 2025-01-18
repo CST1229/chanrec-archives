@@ -9,7 +9,12 @@
 	"main": "src/index.js",
 	"scripts": {
 		"build": "node src/index.js",
-		"vacuum": "node src/vacuum.js"
+		"vacuum": "node scripts/vacuum.js",
+		"clearRegurg": "node scripts/regurgitator-clear.js",
+		"generateRegurg": "node scripts/regurgitator-generate.js",
+		"convertJSON": "node scripts/convertJSON.js",
+		"mergeArchives": "node scripts/archivesMergeTool.js",
+		"format": "prettier -w ./src"
 	},
 	"dependencies": {
 		"better-sqlite3": "^8.4.0",
